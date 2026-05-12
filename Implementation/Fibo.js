@@ -19,5 +19,12 @@ function fibo2(n){
     return fibarr
 }
 
+function fibo3(n){
+    if(n<=1)return n;
+    return fibo3(n-1)+fibo3(n-2);
+}
+
+//The time complexity is really bad = 2^n
 console.log(fibo(6));
-console.log(fibo2(6))
+console.log(fibo2(6));
+console.log(fibo3(6));
